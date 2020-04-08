@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wangEditor</title>
+</head>
+<body>
+
+<div id="div1">
+    <p>欢迎使用 wangEditor 富文本编辑器</p>
+</div>
+<input id="btn1" type="submit" value="确认" onclick="submit()">
+
+
+
+<script type="text/javascript" src="../common/js/wangEditor.min.js"></script>
+<script type="text/javascript">
+
+    var E = window.wangEditor
+    var editor = new E('#div1')
+    editor.create()
+
+    document.getElementById('btn1').addEventListener('click', function () {
+        // 读取 text
+        alert(editor.txt.text())
+    }, false)
+
+
+
+
+</script>
+</body>
+</html>

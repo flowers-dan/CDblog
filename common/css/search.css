@@ -1,0 +1,13 @@
+.search{
+    margin:0 40px 0 880px;
+
+}
+.search input[type="text"]{
+    width: 150px;
+    height: 26px;
+    padding: 8px;
+    border:1px solid #b7b7b7;
+
+}
+.button{
+

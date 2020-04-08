@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <div id="banner1" style="display: none">
+        <img src="../common/image/2a.jpg" width="300" height="200">
+    </div>
+    <div id="banner2" style="display: none">
+        <img src="../common/image/5i.jpg" width="300" height="200">
+    </div>
+    <div id="banner3" style="display: none">
+        <img src="../common/image/9.jpg" width="300" height="200">
+    </div>
+    <p id="show"></p>
+    <ul>
+        <li onclick="show('banner1')">banner1</li>
+        <li onclick="show('banner2')">banner2</li>
+        <li onclick="show('banner3')">banner3</li>
+    </ul>
+</div>
+
+<script>
+
+
+    var x="banner1";
+    document.getElementById(x).style.display="block";
+    function show(i){
+        document.getElementById("banner1").style.display="none";
+        document.getElementById("banner2").style.display="none";
+        document.getElementById("banner3").style.display="none";
+        document.getElementById(i).style.display="block";
+        document.getElementById("show").innerHTML=i;
+    }
+
+    function banner() {
+        if(x==="banner1"){
+            x="banner2";
+            show(x);
+        }else if(x==="banner2"){
+            x="banner3";
+            show(x);
+        }else{
+            x="banner1";
+           show(x);
+        }
+    }
+
+</script>
+</body>
+</html>

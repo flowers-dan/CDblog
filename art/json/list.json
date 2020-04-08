@@ -1,0 +1,34 @@
+[
+  {
+  "title": "View Art",
+  "event": "./json/view.json"
+},
+  {
+    "title": "Jarosław Modzelewski",
+    "event": "./json/jaroslaw.json"
+  },
+  {
+  "title": "Mark Rothko",
+  "event": "./json/mark.json"
+},
+  {
+    "title": "Donald Suitan",
+    "event": "./json/donald.json"
+  },
+  {
+    "title": "Piet Mondrian",
+    "event": "./json/piet.json"
+  },
+  {
+    "title": "看画展的人",
+    "event": "./json/person.json"
+  },
+  {
+    "title": "老树画画",
+    "event": "./json/tree.json"
+  },
+  {
+    "title": "Mammon",
+    "event": "./json/mammon.json"
+  }
+]

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function displayDate()
+        {
+            document.getElementById("demo").innerHTML=Date();
+        }
+    </script>
+</head>
+<body>
+<p id="demo">时间</p>
+    <button type="button" onclick="displayDate()">显示日期</button>
+<script>
+    document.write("<p>这是一个段落</p>")
+</script>
+<p id="ip">这是一个锻炼</p>
+<script>
+    function myFunction()
+    {
+        x=document.getElementById("ip")
+        x.style.color="#ff0000"
+    }
+</script>
+<button type="button" onclick="myFunction()">点击</button>
+
+<input id="rt" type="text">
+<script>
+    function myFunction()
+    {
+        var x=document.getElementById("rt").value;
+        if(x==""||isNaN(x))
+        {
+            alert('不是数字')
+        }
+    }
+</script>
+<button type="button" onclick="myFunction()">点击这里</button>
+<p id="r"></p>
+<script>
+    document.getElementById("r").innerHTML="HSIIE"
+</script>
+<P>假设x=5 x+2=y，并显示结果</P>
+<p id="h"></p>
+<script src="../common/js/13.js" >
+</script>
+<script src="../common/js/45.js" ></script>
+<p>如果时间早于8：00，会显示早上好</p>
+<button onclick="myFunction()">点击</button>
+<p id="d"></p>
+<script>
+    function myFunction() {
+        var x="";
+        var time=new Date().getHours();
+        if (time<8){
+            x="good morning"
+        }else if(time>=8 && time<18){
+            x="good day"
+        }
+        else{
+            x="good evening"
+        }
+        document.getElementById("d").innerHTML=x
+
+    }
+</script>
+</body>
+</html>

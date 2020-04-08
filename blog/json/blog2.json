@@ -1,0 +1,4 @@
+{
+  "title": "<span style='font-size:16px'>[求助1] 我在打开超链接时，提示“由于本机限制，该操作已被取消，请与管理人员联系<span>",
+  "content": "1.打开开始菜单，在运行里输入regedit,回车.\n                            <br>2.在注册表中，导航到HKEY_CURRENT_USER\\Software\\Classes\\.html 项.\n                            <br>3.将名称项为默认的数值项值改为Htmlfile，然后确认，然后退出注册表.\n                            <br>4.重启你正在使用的Office程序，比如Word，Outlook，Excel等，然后再次点Office里面超链接，正常打开，没问题，Over！"
+}

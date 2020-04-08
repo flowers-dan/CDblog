@@ -1,0 +1,40 @@
+{
+  "data": {
+    "title": {
+      "text": "ECharts"
+    },
+    "tooltip": {},
+    "legend": {
+      "data": [
+        "销量"
+      ]
+    },
+    "xAxis": {
+      "data": [
+        "衬衫",
+        "羊毛衫",
+        "雪纺衫",
+        "裤子",
+        "高跟鞋",
+        "袜子"
+      ]
+    },
+    "yAxis": {},
+    "series": [
+      {
+        "name": "销量",
+        "type": "line",
+        "data": [
+          50,
+          20,
+          36,
+          10,
+          10,
+          20
+        ]
+      }
+    ]
+  },
+  "content": "This is a free CSS website template by FreeWebsiteTemplateZ.com. This work is distributed under\n                        the\n                        Creative Commons Attribution 3.0 License,\n                        which means that you are free to use it for any personal or commercial purpose provided you\n                        credit\n                        me in the form of a link back to\n                        FreeWebsiteTemplateZ.com.This is a free CSS website template by FreeWebsiteTemplateZ.com. This\n                        work\n                        is distributed under the Creative\n                        Commons Attribution 3.0 License, which means that you are free to use it for any personal or\n                        commercial purpose provided you credit\n                        me in the form of a link back to FreeWebsiteTemplateZ.com.\n                        This is a free CSS website template by FreeWebsiteTemplateZ.com. This work is distributed under\n                        the\n                        Creative Commons Attribution 3.0 License,\n                        which means that you are free to use it for any personal or commercial purpose provided you\n                        credit\n                        me in the form of a link back to\n                        FreeWebsiteTemplateZ.com.This is a free CSS website template by FreeWebsiteTemplateZ.com. This\n                        work\n                        is distributed under the Creative\n                        Commons Attribution 3.0 License, which means that you are free to use it for any personal or\n                        commercial purpose provided you credit\n                        me in the form of a link back to FreeWebsiteTemplateZ.com.This is a free CSS website template by\n                        FreeWebsiteTemplateZ.com. This work is distributed under\n                        the\n                        Creative Commons Attribution 3.0 License,\n                        which means that you are free to use it for any personal or commercial purpose provided you\n                        credit\n                        me in the form of a link back to\n                        FreeWebsiteTemplateZ.com.This is a free CSS website template by FreeWebsiteTemplateZ.com. This\n                        work\n                        is distributed under the Creative\n                        Commons Attribution 3.0 License, which means that you are free to use it for any personal or\n                        commercial purpose provided you credit\n                        me in the form of a link back to FreeWebsiteTemplateZ.com."
+}
+

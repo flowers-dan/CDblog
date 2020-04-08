@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app">
+    <div>
+        {{ message.title }}
+        <ul>
+            <li v-for="list in lists" @click="getData(list.event)">{{list.title}}</li>
+        </ul>
+        <div>
+            <h1>{{blog.title}}</h1>
+            <span>{{blog.subtitle}}</span>
+            <img v-for="img in blog.pic" :src="img" width="100" height="100">
+            <span v-html="blog.content"></span>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: {
+                title: "wangpeili",
+            },
+            lists: [],
+            blog: {}
+
+        },
+        methods: {
+            getData: function (i) {
+                fetch(i)
+                    .then(res => res.json())
+                    .then(json =>
+                this.blog = json
+            )
+            }
+        },
+        created: function () {
+            console.log("start")
+            fetch("./json/list.json")
+                .then(res => res.json())
+                .then(json =>
+                    this.lists = json)
+        }
+    })
+</script>
+</body>
+</html>

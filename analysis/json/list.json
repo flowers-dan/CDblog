@@ -1,0 +1,6 @@
+[
+  {"title": "图表1",
+    "event": "./json/mychart.json"},
+  {"title": "图表2",
+    "event": "./json/mychart1.json"}
+]
