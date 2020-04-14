@@ -11,38 +11,34 @@ function getData(val) {
 
 getData('./json/blog1.json')
 
+function getActive() {
+  let x=document.getElementsByClassName("cd_list")
+    for(let i=0;i<x.length;i++){
+        x[i].classList.remove("active");
+    }
+    this.classList.add("active");
+}
 
 fetch("./json/list.json")
-    .then(response => response.json())
-    .then(myJson => {
-        for (let i = 0; i < myJson.length; i++) {
-            let li = document.createElement("li")
-            let a = document.createElement("a")
-            a.innerText = myJson[i].title
-            a.href = "javascript:;"
-            a.onclick = () => {
-                getData(myJson[i].event)
-            }
-            li.appendChild(a);
-            li.className="myli"
-            let element = document.getElementById("list")
-            element.appendChild(li)
-        }
-    })
+     .then(response => response.json())
+     .then(myJson => {
+         for(let i=0;i < myJson.length; i++){
+            let li= document.createElement("li");
+             li.className="cd_list";
+             li.addEventListener("click",getActive);
+             let a=document.createElement("a");
+             a.innerText=myJson[i].title;
+             a.href="javascript:;";
+             a.onclick = () =>{
+                 getData(myJson[i].event)
+             };
+             li.appendChild(a);
+             document.getElementById("list").appendChild(li);
 
 
-var cns = document.getElementsByClassName("myli");
-console.log(cns)
-for(let i = 0;i<3;i++)
-{
+         }
 
-    cns[i].addEventListener('click',function () {
+         let x=document.getElementsByClassName("cd_list")
+         x[0].classList.add('active');
 
-        for(let i = 0;i<cns.length;i++){
-            cns[i].className = "";
-        }
-        this.className = "lis";
-
-    });
-
-}
+     })

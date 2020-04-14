@@ -23,7 +23,7 @@
     "series": [
       {
         "name": "销量",
-        "type": "line",
+        "type": "bar",
         "data": [
           50,
           20,

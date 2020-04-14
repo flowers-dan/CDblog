@@ -13,20 +13,32 @@ function getData(val) {
 
 getData("./json/web1.json")
 
+function getActive() {
+    let x = document.getElementsByClassName("cd_list")
+    for (let i = 0; i < x.length; i++) {
+        x[i].classList.remove("active")
+    }
+    this.classList.add("active")
+}
+
 fetch("./json/list.json")
     .then(response => response.json())
     .then(myJson => {
         for (let i = 0; i < myJson.length; i++) {
-            console.log(myJson)
-            var li = document.createElement("li")
-            var a = document.createElement("a")
+            let li = document.createElement("li")
+            li.className = "cd_list"
+            li.addEventListener("click", getActive)
+            let a = document.createElement("a")
             a.innerText = myJson[i].title
             a.href = "javascript:;"
             a.onclick = () => {
                 getData(myJson[i].event)
             }
             li.appendChild(a);
-            var element = document.getElementById("list")
-            list.appendChild(li)
+
+            let element = document.getElementById("list")
+            element.appendChild(li)
         }
+        let x = document.getElementsByClassName("cd_list")
+        x[0].classList.add("active")
     })

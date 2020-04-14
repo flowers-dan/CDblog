@@ -127,6 +127,13 @@ a.rm, a.com {
     line-height: 1.2em;
 }
 
+/* js导航变色 */
+.menu_nav ul li.active a {
+    background: #49b6e9;
+    color: #fff;
+    font-size: 16px;
+}
+
 .menu_nav ul li a:hover {
     font-size: 16px;
     font-weight: 200;
@@ -176,7 +183,7 @@ a.rm, a.com {
     text-decoration: none;
 }
 
-
+/* 侧边导航栏 */
 .sidebar {
     padding: 0px;
     float: right;
@@ -211,16 +218,27 @@ ul.sb_menu {
 ul.sb_menu a {
     text-decoration: none;
     display: block;
-    color: #0f1711;
+    color: #303133;
     padding: 8px 20px;
     border-bottom: 1px solid #bdbdbd;
 }
 
+/* 侧边栏导航--鼠标放在上的样式 */
 ul.sb_menu a:hover {
+    color: #0f1711;
+    font-size: 12.8px;
+}
+
+/* 侧边导航栏点击变色 */
+ul.sb_menu li.active a {
     color: #fff;
     background-color: #b7b7b7;
+    font-weight: bold;
+
 }
-.lis{
+
+
+.lis {
     color: #fff;
     background-color: #b7b7b7;
 

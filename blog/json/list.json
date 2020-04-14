@@ -1,6 +1,4 @@
 [
-  {"title": "常用网站大全",
-  "event": "./json/blog1.json"},
-  {"title": "Excel处理问题大全",
-    "event": "./json/blog2.json"}
+  {"title": "常用网站大全", "event": "./json/blog1.json"},
+  {"title": "Excel处理问题大全", "event": "./json/blog2.json"}
 ]
