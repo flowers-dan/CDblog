@@ -2,7 +2,7 @@ function openchart(i) {
     console.log(i)
     let myChart = echarts.init(document.getElementById('mychart'));
 
-    fetch("./json/" + i + ".json")
+    fetch(i )
         .then(response => response.json())
         .then(json => {
             console.log(json)
@@ -10,7 +10,7 @@ function openchart(i) {
             document.getElementById("content").innerHTML=json.content;
         })
 }
-openchart('mychart')
+
 
 function getActive() {
     let x = document.getElementsByClassName("cd_list")
@@ -23,6 +23,7 @@ function getActive() {
 fetch("./json/list.json")
     .then(response => response.json())
     .then(myJson => {
+        openchart(myJson[0].event)
         for (let i = 0; i < myJson.length; i++) {
             let li = document.createElement("li")
             li.className = "cd_list"
@@ -31,7 +32,7 @@ fetch("./json/list.json")
             a.innerText = myJson[i].title
             a.href = "javascript:;"
             a.onclick = () => {
-                getData(myJson[i].event)
+                openchart(myJson[i].event)
             }
             li.appendChild(a);
 
