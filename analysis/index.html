@@ -4,17 +4,11 @@
     <meta charset="UTF-8">
     <title>数据分析|人口增长</title>
     <link href="../common/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="./analy.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdn.bootcss.com/echarts/3.7.2/echarts.min.js"></script>
 
-    <style>
-        #mychart {
-            width: 300px;
-            height: 300px;
-            float: left;
-            margin: 10px;
-            border: 1px solid #ccc;
-        }
-    </style>
+
+
 </head>
 <body>
 <div class="main">
@@ -61,38 +55,27 @@
     <div class="content">
         <div class="content_resize">
             <div class="mainbar">
+
+                        <h2 style="margin-left: 10px";>数据分析</h2>
+                <hr style="width: 870px;">
+                <br>
+                <br>
+
+
+
                 <div class="article">
-
-                    <div id="mychart">
+                    <div id="mychartline" class="chart">
                     </div>
-
-                    <h2>
-                        <span id="subtitle"></span>
-                    </h2>
-                    <p id="content">
-
-                    </p>
-                    <div class="pages">
-                        <p>page
-                            <span>1</span>
-                            <a href="#">2</a>
-                            <a href="#">>></a>
-                        </p>
+                    <div id="mychartline1" class="chart">
                     </div>
-                </div>
-            </div>
-            <div class="sidebar">
-                <div class="gadget">
-                    <h2>数据分析</h2>
-                    <div class="clr"></div>
-                    <ul class="sb_menu" id="list">
-
-                    </ul>
-                </div>
-                <div class="gadget">
+                    <div id="mychartline2" class="chart">
+                    </div>
+                    <div id="mychartline3" class="chart">
+                    </div>
 
                 </div>
             </div>
+
             <div class="clr"></div>
         </div>
     </div>
@@ -133,7 +116,11 @@
 
     </div>
 </div>
+<script src="echrats/mychartline.js"></script>
+<script src="echrats/mychartline1.js"></script>
+<script src="echrats/mychartline2.js"></script>
+<script src="echrats/mychartline3.js"></script>
 
-<script src="analysis.js"></script>
+
 </body>
 </html>
